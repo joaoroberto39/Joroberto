@@ -56,11 +56,12 @@ a
     display: inline-block;
 	  margin: 0 5px;
 	  color: white;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     position: relative;
     cursor: pointer;
 }
-.menu a::after
+a::after
 {
     content: " ";
     width: 0%;
@@ -74,7 +75,7 @@ a
 
 
 }
-.menu a:hover::after
+a:hover::after
 {
 	width: 100%;
 }
@@ -219,48 +220,25 @@ p
   {
     display: flex;
     animation: transitionIN 0.75s;
+    justify-content: center;
+
   
   }
-  .tituloG h1
+  .primeira_parteC a 
   {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-align: center; 
-    margin-left: 420px; 
-    margin-top: 30px;
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width:768px) {
+    .primeira_parteC {
+      display: block;
+      margin: 0 auto;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+    }
     
-  }
-  .tituloG
-  {
-    width: 80%;
-  }
-  .btn_Voltar a
-  {
-    display: inline-block;
-	  margin: 0 5px;
-    text-decoration: none;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    color: white; 
-    padding: 5px 20px;    
-    left: 10px;
-    top: 40px;
-  }
-  .btn_Voltar a::after
-  {
-    content: " ";
-    width: 0%;
-    height: 2px;
-    border-radius: 1px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
-  }
-  .btn_Voltar a:hover::after
-  {
-    width: 100%; 
   }
   .galeria
   {
